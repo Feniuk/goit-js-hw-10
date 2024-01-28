@@ -29,12 +29,16 @@
 .start-btn{
   width: 75px;
   height: 30px;
-  color: #989898;
-  background-color: #CFCFCF;
+  color: #FFFFFF;
+  background-color: #4E75FF;
   justify-content: center;
   border-radius: 8px;
   border-color: transparent;
   cursor: pointer;
+}
+
+.start-btn:hover{
+  background-color: #6C8CFF;
 }
 
 .form > label > input {
