@@ -4,6 +4,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const btnStart = document.querySelector('button');
+const input = document.querySelector('input');
 const day = document.querySelector('.value[ data-days]');
 const hour = document.querySelector('.value[ data-hours]');
 const minute = document.querySelector('.value[ data-minutes]');
@@ -41,6 +42,7 @@ flatpickr('#datetime-picker', options);
 
 btnStart.addEventListener('click', e => {
   btnStart.disabled = true;
+  input.disabled = true;
   btnStart.style.background = '#CFCFCF';
   btnStart.style.color = '#989898';
   difference = userSelectedDate - Date.now();
